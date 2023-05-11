@@ -6,8 +6,8 @@
 # ######### Settings ##################
 
 video_paths=(
-  "/mnt/user/Movie"
-  "/mnt/user/TV"
+  "/mnt/media-pool/movies"
+  "/mnt/media-pool/shows"
 )
 
 # the size of a video files must be at least 2GB (to exclude bonus content)
@@ -134,17 +134,3 @@ if [[ $preloaded -eq 0 ]] && [[ $skipped -eq 0 ]]; then
 elif [ "$notification" == "1" ]; then
   /usr/local/emhttp/webGui/scripts/notify -i normal -s "Plex Preloader has finished" -d "$preloaded preloaded (from Disk) / $skipped skipped (already in RAM)"
 fi
-
-    Quote
-
-Link to comment
-
-    Replies 177
-    Created 2 yr
-    Last Reply 5 dy
-
-Top Posters In This Topic
-
-    mgutt
-
-    67
